@@ -33,8 +33,8 @@ const Comparison = () => {
                             key={cat}
                             onClick={() => setFilter(cat)}
                             className={`px-6 py-2 rounded-full border transition-all ${filter === cat
-                                    ? 'bg-blue-600 text-white border-blue-600 shadow-md'
-                                    : 'bg-white text-gray-600 border-gray-300 hover:border-blue-400 hover:text-blue-500'
+                                ? 'bg-blue-600 text-white border-blue-600 shadow-md'
+                                : 'bg-white text-gray-600 border-gray-300 hover:border-blue-400 hover:text-blue-500'
                                 }`}
                         >
                             {cat}
@@ -134,7 +134,7 @@ const Comparison = () => {
                                 <td className="p-4"></td>
                                 {filteredTools.map((tool) => (
                                     <td key={tool.id} className="p-6 text-center border-l border-gray-100">
-                                        <a href="#" className="inline-block w-full py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors text-sm">
+                                        <a href={tool.affiliateLink || "#"} target="_blank" rel="noopener noreferrer" className="inline-block w-full py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors text-sm">
                                             Visit Site
                                         </a>
                                     </td>

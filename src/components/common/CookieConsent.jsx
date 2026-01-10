@@ -34,8 +34,11 @@ const CookieConsent = () => {
 
                     <h3 className="text-2xl font-bold text-gray-900 mb-3">Cookie Settings</h3>
 
-                    <p className="text-gray-600 mb-8 leading-relaxed">
-                        We use cookies to personalize content and analyze our traffic. Please decide if you want to accept our cookies.
+                    <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+                        We use cookies to improve your experience, analyze website traffic, and support our email marketing services. Some cookies are essential, while others help us understand how you use our platform.
+                    </p>
+                    <p className="text-gray-600 mb-6 leading-relaxed text-sm">
+                        You can accept all cookies, reject non-essential cookies, or manage your preferences.
                     </p>
 
                     <div className="flex flex-col gap-3">

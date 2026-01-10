@@ -14,10 +14,14 @@ import Guides from './pages/Guides';
 import TopPicks from './pages/TopPicks';
 import Reviews from './pages/Reviews';
 import AffiliateDisclosure from './pages/AffiliateDisclosure';
+import CookiesPolicy from './pages/CookiesPolicy';
+
+import ScrollToTop from './components/common/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -32,6 +36,7 @@ function App() {
           <Route path="/top-picks" element={<TopPicks />} />
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
+          <Route path="/cookies-policy" element={<CookiesPolicy />} />
         </Routes>
       </Layout>
     </Router>

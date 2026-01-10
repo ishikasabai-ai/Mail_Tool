@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const TopPicks = () => {
     const tools = [
         {
-            id: 1,
+            id: "mailchimp",
             rank: "🥇",
             name: "Mailchimp",
             badge: "Best Overall Email Marketing Tool",
@@ -19,10 +19,11 @@ const TopPicks = () => {
                 "Detailed performance reports"
             ],
             color: "bg-yellow-100 text-yellow-800",
-            icon: <Star className="w-6 h-6 text-yellow-600" />
+            icon: <Star className="w-6 h-6 text-yellow-600" />,
+            affiliateLink: "https://mailchimp.com"
         },
         {
-            id: 2,
+            id: "activecampaign",
             rank: "🥈",
             name: "ActiveCampaign",
             badge: "Best for Automation & Advanced Workflows",
@@ -36,10 +37,11 @@ const TopPicks = () => {
                 "CRM integration"
             ],
             color: "bg-gray-100 text-gray-800",
-            icon: <Zap className="w-6 h-6 text-gray-600" />
+            icon: <Zap className="w-6 h-6 text-gray-600" />,
+            affiliateLink: "https://www.activecampaign.com"
         },
         {
-            id: 3,
+            id: "convertkit",
             rank: "🥉",
             name: "ConvertKit",
             badge: "Best for Creators & Newsletters",
@@ -53,10 +55,11 @@ const TopPicks = () => {
                 "Landing pages & forms"
             ],
             color: "bg-orange-100 text-orange-800",
-            icon: <Users className="w-6 h-6 text-orange-600" />
+            icon: <Users className="w-6 h-6 text-orange-600" />,
+            affiliateLink: "https://convertkit.com"
         },
         {
-            id: 4,
+            id: "klaviyo",
             rank: "💼",
             name: "Klaviyo",
             badge: "Best for E-commerce Email Marketing",
@@ -70,10 +73,11 @@ const TopPicks = () => {
                 "Revenue tracking"
             ],
             color: "bg-green-100 text-green-800",
-            icon: <ShoppingBag className="w-6 h-6 text-green-600" />
+            icon: <ShoppingBag className="w-6 h-6 text-green-600" />,
+            affiliateLink: "https://www.klaviyo.com"
         },
         {
-            id: 5,
+            id: "mailerlite",
             rank: "💰",
             name: "MailerLite",
             badge: "Best Budget-Friendly Option",
@@ -87,7 +91,8 @@ const TopPicks = () => {
                 "Generous free plan"
             ],
             color: "bg-blue-100 text-blue-800",
-            icon: <DollarSign className="w-6 h-6 text-blue-600" />
+            icon: <DollarSign className="w-6 h-6 text-blue-600" />,
+            affiliateLink: "https://www.mailerlite.com"
         }
     ];
 
@@ -156,7 +161,7 @@ const TopPicks = () => {
                                         <Link to={`/reviews/${tool.id}`} className="px-6 py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20">
                                             Read Full Review
                                         </Link>
-                                        <a href="#" className="px-6 py-3 bg-white border border-gray-200 text-gray-700 rounded-xl font-bold hover:bg-gray-50 transition-colors">
+                                        <a href={tool.affiliateLink || "#"} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-white border border-gray-200 text-gray-700 rounded-xl font-bold hover:bg-gray-50 transition-colors">
                                             Visit Website
                                         </a>
                                     </div>

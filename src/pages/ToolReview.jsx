@@ -27,7 +27,7 @@ const ToolReview = () => {
                         </div>
                         <span className="text-2xl font-bold">{tool.rating}/5.0</span>
                     </div>
-                    <a href="#" className="inline-flex items-center px-8 py-3 bg-blue-600 rounded-full font-bold hover:bg-blue-500 transition-colors">
+                    <a href={tool.affiliateLink || "#"} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-8 py-3 bg-blue-600 rounded-full font-bold hover:bg-blue-500 transition-colors">
                         Get Started with {tool.name} <ArrowRight className="ml-2" />
                     </a>
                 </div>
@@ -68,9 +68,6 @@ const ToolReview = () => {
                         Whether you are a beginner or a pro, it offers a robust set of features including {tool.features.join(', ')}.
                         Our testing showed that the interface is intuitive, making it easy to set up your first campaign in minutes.
                     </p>
-                    <div className="bg-gray-100 rounded-xl h-64 md:h-96 w-full flex items-center justify-center text-gray-400 border-2 border-dashed border-gray-200 mb-6">
-                        <p>Screenshot of {tool.name} Dashboard Interface</p>
-                    </div>
                 </div>
 
                 {/* Pricing */}

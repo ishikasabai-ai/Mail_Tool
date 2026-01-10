@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Info, ShieldCheck } from 'lucide-react';
+import { Mail, Info, ShieldCheck, Menu, X } from 'lucide-react';
 
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <nav className="bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
-                    <Link to="/" className="flex items-center gap-2 group">
+                    <Link to="/" className="flex items-center gap-2 group" onClick={() => setIsOpen(false)}>
                         <div className="bg-blue-600 p-2 rounded-lg text-white group-hover:rotate-12 transition-transform shadow-lg shadow-blue-600/20">
                             <Mail size={24} />
                         </div>
@@ -16,6 +18,7 @@ const Navbar = () => {
                         </span>
                     </Link>
 
+                    {/* Desktop Navigation */}
                     <div className="hidden md:flex space-x-8">
                         <Link to="/top-picks" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">Top Picks</Link>
                         <Link to="/compare" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">Comparison</Link>
@@ -25,7 +28,8 @@ const Navbar = () => {
                         <Link to="/contact-us" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">Contact Us</Link>
                     </div>
 
-                    <div className="flex items-center gap-6">
+                    {/* Desktop Right Section */}
+                    <div className="hidden md:flex items-center gap-6">
                         <div className="relative group">
                             <button className="flex items-center gap-1.5 text-xs font-medium text-gray-500 hover:text-gray-900 transition-colors py-2">
                                 <Info size={14} className="group-hover:text-blue-600 transition-colors" />
@@ -62,8 +66,43 @@ const Navbar = () => {
                             </button>
                         </Link>
                     </div>
+
+                    {/* Mobile Menu Button */}
+                    <div className="md:hidden flex items-center">
+                        <button onClick={() => setIsOpen(!isOpen)} className="text-gray-600 hover:text-gray-900 p-2 focus:outline-none">
+                            {isOpen ? <X size={24} /> : <Menu size={24} />}
+                        </button>
+                    </div>
                 </div>
             </div>
+
+            {/* Mobile Menu Overlay */}
+            {isOpen && (
+                <div className="md:hidden bg-white border-t border-gray-100 absolute w-full left-0 h-screen shadow-lg animate-fade-in-down overflow-y-auto">
+                    <div className="px-4 pt-4 pb-20 space-y-2">
+                        {['Top Picks', 'Comparison', 'Reviews', 'Ranking', 'Blog', 'Contact Us'].map((item) => (
+                            <Link
+                                key={item}
+                                to={`/${item.toLowerCase().replace(' ', '-')}`}
+                                className="block px-4 py-4 text-base font-bold text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-all"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                {item}
+                            </Link>
+                        ))}
+                        <div className="pt-4 mt-4 border-t border-gray-100">
+                            <Link to="/compare" onClick={() => setIsOpen(false)}>
+                                <button className="w-full bg-blue-600 text-white px-6 py-4 rounded-xl font-bold shadow-lg shadow-blue-600/20 mb-4">
+                                    Find My Tool
+                                </button>
+                            </Link>
+                            <Link to="/affiliate-disclosure" onClick={() => setIsOpen(false)} className="flex items-center gap-2 text-xs text-gray-500 justify-center">
+                                <Info size={14} /> Advertiser Disclosure
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            )}
         </nav>
     );
 };

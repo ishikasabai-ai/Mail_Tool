@@ -115,7 +115,7 @@ const Home = () => {
                                     <Link to={`/reviews/${tool.id}`} className="px-6 py-3 bg-white text-gray-900 border border-gray-200 rounded-lg hover:border-gray-900 font-medium transition-colors text-center shadow-sm">
                                         Read Review
                                     </Link>
-                                    <a href="#" className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium transition-colors text-center shadow-lg shadow-blue-600/20 flex items-center justify-center gap-2">
+                                    <a href={tool.affiliateLink || "#"} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium transition-colors text-center shadow-lg shadow-blue-600/20 flex items-center justify-center gap-2">
                                         Visit Site <ArrowRight size={18} />
                                     </a>
                                 </div>

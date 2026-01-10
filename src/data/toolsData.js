@@ -10,7 +10,8 @@ export const toolsData = [
         features: ["Email Automation", "Landing Pages", "A/B Testing", "Analytics"],
         pros: ["Easy to use", "Great free plan", "Huge integration library"],
         cons: ["Price gets high quickly", "Limited automation on lower tiers"],
-        bestFor: "Beginners & Small Business"
+        bestFor: "Beginners & Small Business",
+        affiliateLink: "https://mailchimp.com"
     },
     {
         id: "activecampaign",
@@ -23,7 +24,8 @@ export const toolsData = [
         features: ["Advanced Automation", "CRM", "SMS Marketing", "Site Tracking"],
         pros: ["Powerful automation", "Built-in CRM", "High deliverability"],
         cons: ["Steep learning curve", "No free plan (only trial)"],
-        bestFor: "Automation & E-commerce"
+        bestFor: "Automation & E-commerce",
+        affiliateLink: "https://www.activecampaign.com"
     },
     {
         "id": "getresponse",
@@ -36,7 +38,8 @@ export const toolsData = [
         "features": ["Email Automation", "Webinars", "Landing Pages", "Sales Funnels"],
         "pros": ["Built-in webinars", "Strong automation", "Good templates"],
         "cons": ["UI can feel crowded", "Automation locked on higher plans"],
-        "bestFor": "Marketers & online educators"
+        "bestFor": "Marketers & online educators",
+        "affiliateLink": "https://www.getresponse.com"
     },
     {
         id: "brevo",
@@ -49,7 +52,8 @@ export const toolsData = [
         features: ["Email & SMS", "Chat Widget", "CRM", "Facebook Ads"],
         pros: ["Unlimited contacts (pay by email volume)", "SMS included", "Transactional emails"],
         cons: ["Template builder can be buggy", "Customer support varies"],
-        bestFor: "Budget Conscious & Multi-channel"
+        bestFor: "Budget Conscious & Multi-channel",
+        affiliateLink: "https://www.brevo.com"
     },
     {
         id: "constantcontact",
@@ -62,6 +66,49 @@ export const toolsData = [
         features: ["Event Marketing", "Social Media Posting", "Email Templates", "Reporting"],
         pros: ["Very easy to start", "Good event tools", "Phone support"],
         cons: ["Dated interface", "Limited automation capabilities"],
-        bestFor: "Events & Non-profits"
+        bestFor: "Events & Non-profits",
+        affiliateLink: "https://www.constantcontact.com"
+    },
+    {
+        id: "convertkit",
+        name: "ConvertKit",
+        logo: "https://tse4.mm.bing.net/th/id/OIP.ikIqr_F6I3r1jn2C6mIpOAHaHa?w=474&h=379&c=7&p=0",
+        rating: 4.6,
+        reviews: 3500,
+        description: "The go-to email platform for creators, bloggers, and authors.",
+        pricing: "Free plan for 1k subs. Paid starts at $29/mo",
+        features: ["Visual Automation", "Landing Pages", "Commerce Features", "Creator Network"],
+        pros: ["Excellent delivery rates", "Simple text-based emails focus on content", "Great for selling digital products"],
+        cons: ["Limited design options for emails", "Reporting is basic on lower plans"],
+        bestFor: "Creators & Bloggers",
+        affiliateLink: "https://convertkit.com"
+    },
+    {
+        id: "klaviyo",
+        name: "Klaviyo",
+        logo: "https://logowik.com/content/uploads/images/klaviyo8917.jpg",
+        rating: 4.7,
+        reviews: 5100,
+        description: "The ultimate growth engine for e-commerce brands.",
+        pricing: "Free plan up to 250 contacts. Paid starts at $20/mo",
+        features: ["Deep E-commerce Integration", "SMS Marketing", "Predictive Analytics", "Advanced Segmentation"],
+        pros: ["Incredible data usage", "ROI tracking", "Best-in-class Shopify integration"],
+        cons: ["Can get expensive quickly", "Support can be slow"],
+        bestFor: "E-commerce & DTC",
+        affiliateLink: "https://www.klaviyo.com"
+    },
+    {
+        id: "mailerlite",
+        name: "MailerLite",
+        logo: "https://www.engagebay.com/blog/wp-content/uploads/2023/02/logo.jpg",
+        rating: 4.5,
+        reviews: 4800,
+        description: "Simple, effective, and affordable email marketing.",
+        pricing: "Free plan available. Paid starts at $10/mo",
+        features: ["Drag-and-drop Editor", "Automation", "Websites", "Popups"],
+        pros: ["Clean interface", "Very affordable", "Great free plan"],
+        cons: ["Approval process can be strict", "Validation required"],
+        bestFor: "Small Business & Starters",
+        affiliateLink: "https://www.mailerlite.com"
     }
 ];
