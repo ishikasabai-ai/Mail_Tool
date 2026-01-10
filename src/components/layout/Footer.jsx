@@ -24,7 +24,7 @@ const Footer = () => {
                     <div>
                         <h3 className="font-semibold text-gray-900 mb-4">Explore</h3>
                         <ul className="space-y-3 text-sm text-gray-500">
-                            <li><Link to="/" className="hover:text-blue-600 transition-colors">Top Picks</Link></li>
+                            <li><Link to="/top-picks" className="hover:text-blue-600 transition-colors">Top Picks</Link></li>
                             <li><Link to="/compare" className="hover:text-blue-600 transition-colors">Comparison Table</Link></li>
                             <li><Link to="/ranking" className="hover:text-blue-600 transition-colors">Ranking Criteria</Link></li>
                         </ul>
@@ -33,9 +33,8 @@ const Footer = () => {
                     <div>
                         <h3 className="font-semibold text-gray-900 mb-4">Resources</h3>
                         <ul className="space-y-3 text-sm text-gray-500">
-                            <li><a href="#" className="hover:text-blue-600 transition-colors">Blog</a></li>
+                            <li><Link to="/blog" className="hover:text-blue-600 transition-colors">Blog</Link></li>
                             <li><Link to="/guides" className="hover:text-blue-600 transition-colors">Guides</Link></li>
-                            <li><a href="#" className="hover:text-blue-600 transition-colors">Glossary</a></li>
                         </ul>
                     </div>
 

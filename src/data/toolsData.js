@@ -15,7 +15,7 @@ export const toolsData = [
     {
         id: "activecampaign",
         name: "ActiveCampaign",
-        logo: "https://placehold.co/100x100?text=ActiveCampaign",
+        logo: "https://w7.pngwing.com/pngs/758/475/png-transparent-activecampaign-vertical-logo-tech-companies.png",
         rating: 4.8,
         reviews: 8900,
         description: "Advanced automation and CRM for growing businesses.",
@@ -26,22 +26,22 @@ export const toolsData = [
         bestFor: "Automation & E-commerce"
     },
     {
-        id: "convertkit",
-        name: "ConvertKit",
-        logo: "https://placehold.co/100x100?text=ConvertKit",
-        rating: 4.7,
-        reviews: 5000,
-        description: "The go-to marketing hub for creators to grow and monetize.",
-        pricing: "Free for 1000 subs. Paid starts at $29/mo",
-        features: ["Visual Automations", "Landing Pages", "Paid Newsletters", "Creator Network"],
-        pros: ["Built for creators", "Simple interface", "High deliverability"],
-        cons: ["Limited email design options", "Reporting is basic"],
-        bestFor: "Creators & Bloggers"
+        "id": "getresponse",
+        "name": "GetResponse",
+        "logo": "https://tse2.mm.bing.net/th/id/OIP.7Gap2K45tkc3DoyxoGttRQAAAA?w=400&h=320&c=7&p=0",
+        "rating": 4.4,
+        "reviews": 8900,
+        "description": "An all-in-one marketing platform with email campaigns, automation, and webinars.",
+        "pricing": "Free plan available. Paid starts at $19/mo",
+        "features": ["Email Automation", "Webinars", "Landing Pages", "Sales Funnels"],
+        "pros": ["Built-in webinars", "Strong automation", "Good templates"],
+        "cons": ["UI can feel crowded", "Automation locked on higher plans"],
+        "bestFor": "Marketers & online educators"
     },
     {
         id: "brevo",
         name: "Brevo (Sendinblue)",
-        logo: "https://placehold.co/100x100?text=Brevo",
+        logo: "https://nalaa.co/wp-content/uploads/2024/05/BREVO-LOGO-EMAILING.jpeg",
         rating: 4.4,
         reviews: 6500,
         description: "Smart marketing tools for email, SMS, and chat.",
@@ -54,7 +54,7 @@ export const toolsData = [
     {
         id: "constantcontact",
         name: "Constant Contact",
-        logo: "https://placehold.co/100x100?text=Constant+Contact",
+        logo: "https://tse4.mm.bing.net/th/id/OIP.KMXTJofeKkg77IAn37xhRQHaD4?w=474&h=379&c=7&p=0",
         rating: 4.3,
         reviews: 4200,
         description: "Reliable and easy-to-use email marketing for small biz.",

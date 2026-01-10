@@ -9,7 +9,7 @@ const TopPicks = () => {
             rank: "🥇",
             name: "Mailchimp",
             badge: "Best Overall Email Marketing Tool",
-            logo: "https://placehold.co/100x100?text=Mailchimp",
+            logo: "https://tse3.mm.bing.net/th/id/OIP.dTNA95jKWk64stcq2ddiDAHaEK?cb=defcachec2&w=474&h=379&c=7&p=0",
             description: "Mailchimp offers a well-rounded solution with powerful automation, analytics, and an intuitive interface.",
             bestFor: "Small to medium-sized businesses",
             features: [
@@ -26,7 +26,7 @@ const TopPicks = () => {
             rank: "🥈",
             name: "ActiveCampaign",
             badge: "Best for Automation & Advanced Workflows",
-            logo: "https://placehold.co/100x100?text=ActiveCampaign",
+            logo: "https://w7.pngwing.com/pngs/758/475/png-transparent-activecampaign-vertical-logo-tech-companies.png",
             description: "Exceptional automation capabilities combined with CRM features.",
             bestFor: "Growing businesses & agencies",
             features: [
@@ -43,7 +43,7 @@ const TopPicks = () => {
             rank: "🥉",
             name: "ConvertKit",
             badge: "Best for Creators & Newsletters",
-            logo: "https://placehold.co/100x100?text=ConvertKit",
+            logo: "https://tse4.mm.bing.net/th/id/OIP.ikIqr_F6I3r1jn2C6mIpOAHaHa?w=474&h=379&c=7&p=0",
             description: "Built specifically for creators who want simplicity with powerful segmentation.",
             bestFor: "Bloggers, YouTubers, podcasters",
             features: [
@@ -60,7 +60,7 @@ const TopPicks = () => {
             rank: "💼",
             name: "Klaviyo",
             badge: "Best for E-commerce Email Marketing",
-            logo: "https://placehold.co/100x100?text=Klaviyo",
+            logo: "https://logowik.com/content/uploads/images/klaviyo8917.jpg",
             description: "Deep e-commerce integrations and revenue-focused analytics.",
             bestFor: "Online stores & DTC brands",
             features: [
@@ -77,7 +77,7 @@ const TopPicks = () => {
             rank: "💰",
             name: "MailerLite",
             badge: "Best Budget-Friendly Option",
-            logo: "https://placehold.co/100x100?text=MailerLite",
+            logo: "https://www.engagebay.com/blog/wp-content/uploads/2023/02/logo.jpg",
             description: "Affordable pricing with solid features for beginners.",
             bestFor: "Startups & small teams",
             features: [
