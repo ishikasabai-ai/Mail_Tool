@@ -27,7 +27,7 @@ const ContactUs = () => {
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-gray-900">Email</h4>
-                                        <p className="text-gray-600">supportEmail@gmail.com</p>
+                                        <p className="text-gray-600">support@EmailToolRank.com</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-4">

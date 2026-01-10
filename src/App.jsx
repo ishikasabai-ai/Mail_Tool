@@ -7,6 +7,7 @@ import Compare from './pages/Comparison';
 import ToolReview from './pages/ToolReview';
 import Ranking from './pages/Ranking';
 import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import ContactUs from './pages/ContactUs';
@@ -29,6 +30,7 @@ function App() {
           <Route path="/reviews/:id" element={<ToolReview />} />
           <Route path="/ranking" element={<Ranking />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/contact-us" element={<ContactUs />} />

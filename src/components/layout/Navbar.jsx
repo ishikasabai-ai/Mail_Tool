@@ -14,7 +14,7 @@ const Navbar = () => {
                             <Mail size={24} />
                         </div>
                         <span className="font-bold text-xl tracking-tight text-gray-900">
-                            Email<span className="text-blue-600">Tool</span>Rank
+                            Mail<span className="text-blue-600">Tool</span>Rank
                         </span>
                     </Link>
 

@@ -13,7 +13,7 @@ const Footer = () => {
                                 <Mail size={20} />
                             </div>
                             <span className="font-bold text-lg text-gray-900">
-                                EmailToolRank
+                                MailToolRank
                             </span>
                         </Link>
                         <p className="text-gray-500 text-sm leading-relaxed mb-6">
