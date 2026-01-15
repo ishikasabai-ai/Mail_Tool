@@ -25,6 +25,7 @@ const Navbar = () => {
                         <Link to="/reviews" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">Reviews</Link>
                         <Link to="/ranking" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">How We Rank</Link>
                         <Link to="/blog" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">Blog</Link>
+                        <Link to="/about" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">About Us</Link>
                         <Link to="/contact-us" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">Contact Us</Link>
                     </div>
 
@@ -80,7 +81,7 @@ const Navbar = () => {
             {isOpen && (
                 <div className="md:hidden bg-white border-t border-gray-100 absolute w-full left-0 h-screen shadow-lg animate-fade-in-down overflow-y-auto">
                     <div className="px-4 pt-4 pb-20 space-y-2">
-                        {['Top Picks', 'Comparison', 'Reviews', 'Ranking', 'Blog', 'Contact Us'].map((item) => (
+                        {['Top Picks', 'Comparison', 'Reviews', 'Ranking', 'Blog', 'About', 'Contact Us'].map((item) => (
                             <Link
                                 key={item}
                                 to={`/${item.toLowerCase().replace(' ', '-')}`}

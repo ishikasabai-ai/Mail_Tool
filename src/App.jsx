@@ -16,6 +16,7 @@ import TopPicks from './pages/TopPicks';
 import Reviews from './pages/Reviews';
 import AffiliateDisclosure from './pages/AffiliateDisclosure';
 import CookiesPolicy from './pages/CookiesPolicy';
+import AboutUs from './pages/AboutUs';
 
 import ScrollToTop from './components/common/ScrollToTop';
 
@@ -39,6 +40,7 @@ function App() {
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
           <Route path="/cookies-policy" element={<CookiesPolicy />} />
+          <Route path="/about" element={<AboutUs />} />
         </Routes>
       </Layout>
     </Router>
