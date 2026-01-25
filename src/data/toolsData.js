@@ -5,49 +5,6 @@ import moosendLogo from '../assets/moosend.png';
 
 export const toolsData = [
     {
-        id: "mailchimp",
-        name: "Mailchimp",
-        logo: "https://tse3.mm.bing.net/th/id/OIP.dTNA95jKWk64stcq2ddiDAHaEK?cb=defcachec2&w=474&h=379&c=7&p=0",
-        rating: 4.5,
-        reviews: 12500,
-        description: "The all-in-one marketing platform for small businesses.",
-        pricing: "Free plan available. Paid starts at $13/mo",
-        features: ["Email Automation", "Landing Pages", "A/B Testing", "Analytics"],
-        pros: ["Easy to use", "Great free plan", "Huge integration library"],
-        cons: ["Price gets high quickly", "Limited automation on lower tiers"],
-        bestFor: "Beginners & Small Business",
-        affiliateLink: "https://mailchimp.com"
-    },
-    // ... (keep other tools same) ...
-    {
-        id: "mailerlite",
-        name: "MailerLite",
-        logo: mailerliteLogo,
-        rating: 4.5,
-        reviews: 4800,
-        description: "Simple, effective, and affordable email marketing.",
-        pricing: "Free plan available. Paid starts at $10/mo",
-        features: ["Drag-and-drop Editor", "Automation", "Websites", "Popups"],
-        pros: ["Clean interface", "Very affordable", "Great free plan"],
-        cons: ["Approval process can be strict", "Validation required"],
-        bestFor: "Small Business & Starters",
-        affiliateLink: "https://www.mailerlite.com"
-    },
-    {
-        id: "convertkit",
-        name: "ConvertKit",
-        logo: "https://tse4.mm.bing.net/th/id/OIP.ikIqr_F6I3r1jn2C6mIpOAHaHa?w=474&h=379&c=7&p=0",
-        rating: 4.6,
-        reviews: 3500,
-        description: "The go-to email platform for creators, bloggers, and authors.",
-        pricing: "Free plan for 1k subs. Paid starts at $29/mo",
-        features: ["Visual Automation", "Landing Pages", "Commerce Features", "Creator Network"],
-        pros: ["Excellent delivery rates", "Simple text-based emails focus on content", "Great for selling digital products"],
-        cons: ["Limited design options for emails", "Reporting is basic on lower plans"],
-        bestFor: "Creators & Bloggers",
-        affiliateLink: "https://convertkit.com"
-    },
-    {
         id: "bigmailer",
         name: "BigMailer",
         logo: bigmailerLogo,
@@ -121,6 +78,49 @@ export const toolsData = [
                 content: "After extensive evaluation, BigMailer stands out as a reliable, no-nonsense email delivery platform for high-volume senders. Its combination of Amazon SES reliability, advanced deliverability controls, and clean user experience makes it a strong alternative to traditional enterprise ESPs.\n\nWhile it may not suit beginners looking for flashy templates, for teams that care about inbox placement, control, and cost efficiency, BigMailer is an excellent long-term solution."
             }
         ]
+    },
+    {
+        id: "mailchimp",
+        name: "Mailchimp",
+        logo: "https://tse3.mm.bing.net/th/id/OIP.dTNA95jKWk64stcq2ddiDAHaEK?cb=defcachec2&w=474&h=379&c=7&p=0",
+        rating: 4.5,
+        reviews: 12500,
+        description: "The all-in-one marketing platform for small businesses.",
+        pricing: "Free plan available. Paid starts at $13/mo",
+        features: ["Email Automation", "Landing Pages", "A/B Testing", "Analytics"],
+        pros: ["Easy to use", "Great free plan", "Huge integration library"],
+        cons: ["Price gets high quickly", "Limited automation on lower tiers"],
+        bestFor: "Beginners & Small Business",
+        affiliateLink: "https://mailchimp.com"
+    },
+    // ... (keep other tools same) ...
+    {
+        id: "mailerlite",
+        name: "MailerLite",
+        logo: mailerliteLogo,
+        rating: 4.5,
+        reviews: 4800,
+        description: "Simple, effective, and affordable email marketing.",
+        pricing: "Free plan available. Paid starts at $10/mo",
+        features: ["Drag-and-drop Editor", "Automation", "Websites", "Popups"],
+        pros: ["Clean interface", "Very affordable", "Great free plan"],
+        cons: ["Approval process can be strict", "Validation required"],
+        bestFor: "Small Business & Starters",
+        affiliateLink: "https://www.mailerlite.com"
+    },
+    {
+        id: "convertkit",
+        name: "ConvertKit",
+        logo: "https://tse4.mm.bing.net/th/id/OIP.ikIqr_F6I3r1jn2C6mIpOAHaHa?w=474&h=379&c=7&p=0",
+        rating: 4.6,
+        reviews: 3500,
+        description: "The go-to email platform for creators, bloggers, and authors.",
+        pricing: "Free plan for 1k subs. Paid starts at $29/mo",
+        features: ["Visual Automation", "Landing Pages", "Commerce Features", "Creator Network"],
+        pros: ["Excellent delivery rates", "Simple text-based emails focus on content", "Great for selling digital products"],
+        cons: ["Limited design options for emails", "Reporting is basic on lower plans"],
+        bestFor: "Creators & Bloggers",
+        affiliateLink: "https://convertkit.com"
     },
     {
         id: "aweber",

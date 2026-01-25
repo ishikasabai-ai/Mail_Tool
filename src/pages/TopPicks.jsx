@@ -1,12 +1,31 @@
 import React from 'react';
 import { Star, Check, Award, TrendingUp, Users, ShoppingBag, DollarSign, Zap, ShieldCheck, Send, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import bigmailerLogo from '../assets/bigmailer.png';
 
 const TopPicks = () => {
     const tools = [
         {
-            id: "mailchimp",
+            id: "bigmailer",
             rank: "🥇",
+            name: "BigMailer",
+            badge: "Best for Agencies & High Volume",
+            logo: bigmailerLogo,
+            description: "High-performance email delivery platform built for teams that take inbox placement and control seriously.",
+            bestFor: "Agencies & High Volume",
+            features: [
+                "High-volume email sending",
+                "Unlimited brands & domains",
+                "Advanced User Permissions",
+                "Built on Amazon SES"
+            ],
+            color: "bg-indigo-100 text-indigo-800",
+            icon: <ShieldCheck className="w-6 h-6 text-indigo-600" />,
+            affiliateLink: "https://www.bigmailer.io/?via=ishika-rawat"
+        },
+        {
+            id: "mailchimp",
+            rank: "🥈",
             name: "Mailchimp",
             badge: "Best Overall Email Marketing Tool",
             logo: "https://tse3.mm.bing.net/th/id/OIP.dTNA95jKWk64stcq2ddiDAHaEK?cb=defcachec2&w=474&h=379&c=7&p=0",
@@ -24,7 +43,7 @@ const TopPicks = () => {
         },
         {
             id: "activecampaign",
-            rank: "🥈",
+            rank: "🥉",
             name: "ActiveCampaign",
             badge: "Best for Automation & Advanced Workflows",
             logo: "https://w7.pngwing.com/pngs/758/475/png-transparent-activecampaign-vertical-logo-tech-companies.png",
@@ -42,7 +61,7 @@ const TopPicks = () => {
         },
         {
             id: "convertkit",
-            rank: "🥉",
+            rank: "🎨",
             name: "ConvertKit",
             badge: "Best for Creators & Newsletters",
             logo: "https://tse4.mm.bing.net/th/id/OIP.ikIqr_F6I3r1jn2C6mIpOAHaHa?w=474&h=379&c=7&p=0",
