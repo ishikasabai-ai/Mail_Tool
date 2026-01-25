@@ -75,7 +75,7 @@ const Home = () => {
             <section id="top-picks" className="py-24 bg-gray-50/50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Top 5 Email Marketing Tools</h2>
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Top Email Marketing Tools</h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">Our hand-picked selection of the best platforms for 2026.</p>
                     </div>
 
@@ -100,7 +100,10 @@ const Home = () => {
                                             <span className="text-gray-400 text-sm">/ 5.0</span>
                                         </div>
                                     </div>
-                                    <p className="text-gray-600 mb-4">{tool.description}</p>
+                                    <p className="text-gray-600 mb-2">{tool.description}</p>
+                                    <p className="text-blue-600 font-medium text-sm mb-4">
+                                        <span className="bg-blue-50 px-2 py-1 rounded border border-blue-100">{tool.pricing}</span>
+                                    </p>
                                     <div className="flex flex-wrap gap-2 justify-center md:justify-start mb-6">
                                         {tool.features.slice(0, 3).map((feature, i) => (
                                             <span key={i} className="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full border border-gray-200">{feature}</span>

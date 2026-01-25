@@ -25,7 +25,8 @@ const Reviews = () => {
                             "This app doubled our email open rates in just two weeks. Simple, powerful, and reliable.",
                             "The easiest email marketing tool we’ve ever used. Setup took minutes, not hours.",
                             "Automation that actually works. Our campaigns now run on autopilot.",
-                            "Clean interface, smart features, and amazing results."
+                            "Clean interface, smart features, and amazing results.",
+                            "The pricing structure is extremely reasonable making this a fantastic transition for us from Mailchimp."
                         ].map((review, i) => (
                             <div key={i} className="bg-gray-50 p-6 rounded-xl border border-gray-100">
                                 <div className="flex text-yellow-400 mb-4">
@@ -82,6 +83,34 @@ const Reviews = () => {
                             <div>
                                 <div className="font-bold text-gray-900">Priya K.</div>
                                 <div className="text-sm text-gray-500">E-commerce Founder</div>
+                            </div>
+                        </div>
+
+                        <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 relative">
+                            <Quote className="absolute top-6 right-6 text-gray-100 w-12 h-12" />
+                            <div className="flex text-yellow-400 mb-4">
+                                {[...Array(5)].map((_, j) => <Star key={j} size={18} fill="currentColor" />)}
+                            </div>
+                            <p className="text-gray-600 mb-6 leading-relaxed">
+                                “I moved my account from Klaviyo to BigMailer and I’m so happy. Their customer support is the BEST. The pricing structure is extremely reasonable making this a fantastic transition for us. The platform is super easy to use and we already see improvement in email delivery.”
+                            </p>
+                            <div>
+                                <div className="font-bold text-gray-900">Former Klaviyo User</div>
+                                <div className="text-sm text-gray-500">E-commerce Brand</div>
+                            </div>
+                        </div>
+
+                        <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 relative">
+                            <Quote className="absolute top-6 right-6 text-gray-100 w-12 h-12" />
+                            <div className="flex text-yellow-400 mb-4">
+                                {[...Array(5)].map((_, j) => <Star key={j} size={18} fill="currentColor" />)}
+                            </div>
+                            <p className="text-gray-600 mb-6 leading-relaxed">
+                                “This has the features I need, it’s priced competitively, and the customer support is very responsive and helpful. All my email marketing strategy can be handled by BigMailer.”
+                            </p>
+                            <div>
+                                <div className="font-bold text-gray-900">Marketing Director</div>
+                                <div className="text-sm text-gray-500">Digital Agency</div>
                             </div>
                         </div>
                     </div>

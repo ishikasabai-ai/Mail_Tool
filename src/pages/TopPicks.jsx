@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, Check, Award, TrendingUp, Users, ShoppingBag, DollarSign, Zap } from 'lucide-react';
+import { Star, Check, Award, TrendingUp, Users, ShoppingBag, DollarSign, Zap, ShieldCheck, Send, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const TopPicks = () => {
@@ -93,6 +93,42 @@ const TopPicks = () => {
             color: "bg-blue-100 text-blue-800",
             icon: <DollarSign className="w-6 h-6 text-blue-600" />,
             affiliateLink: "https://www.mailerlite.com"
+        },
+        {
+            id: "brevo",
+            rank: "📨",
+            name: "Brevo",
+            badge: "Best Value & Transactional Emails",
+            logo: "https://nalaa.co/wp-content/uploads/2024/05/BREVO-LOGO-EMAILING.jpeg",
+            description: "Powerful platform for transactional emails, SMS, and chat.",
+            bestFor: "Small businesses & Transactional needs",
+            features: [
+                "Unlimited Contacts",
+                "Free Daily Sending",
+                "SMS Marketing",
+                "Chat Widget"
+            ],
+            color: "bg-purple-100 text-purple-800",
+            icon: <Send className="w-6 h-6 text-purple-600" />,
+            affiliateLink: "https://www.brevo.com"
+        },
+        {
+            id: "getresponse",
+            rank: "🚀",
+            name: "GetResponse",
+            badge: "Best All-in-One Marketing Platform",
+            logo: "https://tse2.mm.bing.net/th/id/OIP.7Gap2K45tkc3DoyxoGttRQAAAA?w=400&h=320&c=7&p=0",
+            description: "Complete marketing suite with webinars and sales funnels.",
+            bestFor: "Marketers & Online Educators",
+            features: [
+                "Sales Funnels",
+                "Webinars",
+                "Marketing Automation",
+                "Paid Ads"
+            ],
+            color: "bg-teal-100 text-teal-800",
+            icon: <Globe className="w-6 h-6 text-teal-600" />,
+            affiliateLink: "https://www.getresponse.com"
         }
     ];
 
